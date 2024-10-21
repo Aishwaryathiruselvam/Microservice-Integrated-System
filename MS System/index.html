@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Digital Storefront</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header with Navigation Bar -->
+    <header>
+        <div class="header-container">
+            <h1>My Digital Storefront</h1>
+            <nav>
+                <ul>
+                    <li><a href="#" id="home">Home</a></li>
+                    <li><a href="#" id="contact">Contact</a></li>
+                    <li><a href="#" id="shop">Shop</a></li>
+                    <li><a href="#" id="about">About Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Home Section -->
+    <div id="home-section" class="section">
+        <h2>Welcome to My Digital Storefront</h2>
+        <p>Explore a wide range of products tailored for every occasion.</p>
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contact-section" class="section" style="display: none;">
+        <h2>Contact Us</h2>
+        <p>Email: support@storefront.com</p>
+        <p>Phone: +1 234 567 890</p>
+    </div>
+
+    <!-- About Us Section -->
+    <div id="about-section" class="section" style="display: none;">
+        <h2>About Us</h2>
+        <p>We offer high-quality products to make your life easier during special moments like maternity and more!</p>
+    </div>
+
+    <!-- Shop Section (Maternity Products) -->
+    <div id="shop-section" class="section" style="display: none;">
+        <h2>Maternity Products Store</h2>
+        <div class="product-list">
+            <!-- Product 1 -->
+            <div class="product">
+                <input type="checkbox" id="maternity-clothes" data-name="Maternity Clothes" data-price="50">
+                <label for="maternity-clothes">
+                    <h2>Maternity Clothes</h2>
+                    <p>Price: $50</p>
+                </label>
+            </div>
+            <!-- Product 2 -->
+            <div class="product">
+                <input type="checkbox" id="body-pillow" data-name="Body Pillow" data-price="30">
+                <label for="body-pillow">
+                    <h2>Body Pillow</h2>
+                    <p>Price: $30</p>
+                </label>
+            </div>
+            <!-- Product 3 -->
+            <div class="product">
+                <input type="checkbox" id="comfortable-shoes" data-name="Comfortable Shoes" data-price="60">
+                <label for="comfortable-shoes">
+                    <h2>Comfortable Shoes</h2>
+                    <p>Price: $60</p>
+                </label>
+            </div>
+            <!-- Product 4 -->
+            <div class="product">
+                <input type="checkbox" id="stretch-mark-cream" data-name="Stretch Mark Cream" data-price="25">
+                <label for="stretch-mark-cream">
+                    <h2>Stretch Mark Cream</h2>
+                    <p>Price: $25</p>
+                </label>
+            </div>
+            <!-- Product 5 -->
+            <div class="product">
+                <input type="checkbox" id="compression-stockings" data-name="Compression Stockings" data-price="20">
+                <label for="compression-stockings">
+                    <h2>Compression Stockings</h2>
+                    <p>Price: $20</p>
+                </label>
+            </div>
+            <!-- Product 6 -->
+            <div class="product">
+                <input type="checkbox" id="hospital-bag" data-name="Hospital Bag" data-price="40">
+                <label for="hospital-bag">
+                    <h2>Hospital Bag</h2>
+                    <p>Price: $40</p>
+                </label>
+            </div>
+            <!-- Product 7 -->
+            <div class="product">
+                <input type="checkbox" id="nursing-pillow" data-name="Nursing Pillow" data-price="35">
+                <label for="nursing-pillow">
+                    <h2>Nursing Pillow</h2>
+                    <p>Price: $35</p>
+                </label>
+            </div>
+            <!-- Product 8 -->
+            <div class="product">
+                <input type="checkbox" id="supportive-belly-band" data-name="Supportive Belly Band" data-price="25">
+                <label for="supportive-belly-band">
+                    <h2>Supportive Belly Band</h2>
+                    <p>Price: $25</p>
+                </label>
+            </div>
+            <!-- Product 9 -->
+            <div class="product">
+                <input type="checkbox" id="pregnancy-skincare" data-name="Pregnancy-Safe Skincare Products" data-price="40">
+                <label for="pregnancy-skincare">
+                    <h2>Pregnancy-Safe Skincare Products</h2>
+                    <p>Price: $40</p>
+                </label>
+            </div>
+            <!-- Product 10 -->
+            <div class="product">
+                <input type="checkbox" id="prenatal-exercise" data-name="Prenatal Exercise Equipment" data-price="55">
+                <label for="prenatal-exercise">
+                    <h2>Prenatal Exercise Equipment</h2>
+                    <p>Price: $55</p>
+                </label>
+            </div>
+        </div>
+
+        <button class="confirm-btn" onclick="confirmPurchase()">Confirm Purchase</button>
+    </div>
+
+    <!-- Confirmation Message -->
+    <div id="confirmation-message" class="confirmation-message" style="display: none;">
+        <h2>Thank you for your purchase!</h2>
+        <p class="quote">A little bundle of joy 👼🏻 is on the way 👣! Wishing you all the happiness ✨ during this special time.</p>
+        <p>Your items:</p>
+        <ul id="purchased-items-list"></ul>
+        <button onclick="resetCart()">Shop Again</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
